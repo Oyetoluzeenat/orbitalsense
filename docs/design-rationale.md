@@ -27,3 +27,12 @@ signals it.
 
 This is the Trust objective in one comparison: a value that parses is not a
 value that can be believed.
+
+## Query 3 validation against a known answer
+
+Run blind against 14 days of historical telemetry, the weakest-signal query
+returned SAT-11 at -98.51 dBm mean, against -65 dBm for all eleven others,
+with 5,328 LOST and 2,894 DEGRADED statuses where the rest recorded none.
+
+The dataset's answer key names SAT-11 as the deliberately degraded satellite.
+The query found it without being told what to look for.

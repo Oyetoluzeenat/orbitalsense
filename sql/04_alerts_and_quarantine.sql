@@ -44,8 +44,7 @@ SELECT
 FROM curated c
 FULL OUTER JOIN quarantine q ON c.subsystem = q.subsystem
 ORDER BY alerts DESC;
-Then the diagnostic drill-down that produces the actual finding:
--- Where is the rot, and is it one ground station?
+-- Diagnostic drill-down: where is the rot, and is it one ground station?
 SELECT reason_code, offending_field, ground_station_id,
        COUNT(*) AS n,
        MIN(ingest_time) AS first_seen,
