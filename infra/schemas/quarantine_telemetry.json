@@ -1,0 +1,15 @@
+[
+  {"name": "ingest_time", "type": "TIMESTAMP", "mode": "REQUIRED"},
+  {"name": "publish_time", "type": "TIMESTAMP", "mode": "NULLABLE"},
+  {"name": "pubsub_message_id", "type": "STRING", "mode": "NULLABLE"},
+  {"name": "event_id", "type": "STRING", "mode": "NULLABLE", "description": "Null when the payload could not be parsed"},
+  {"name": "satellite_id", "type": "STRING", "mode": "NULLABLE"},
+  {"name": "subsystem", "type": "STRING", "mode": "NULLABLE"},
+  {"name": "ground_station_id", "type": "STRING", "mode": "NULLABLE"},
+  {"name": "reason_code", "type": "STRING", "mode": "REQUIRED", "description": "Stable, enumerable, groupable"},
+  {"name": "reason_detail", "type": "STRING", "mode": "NULLABLE"},
+  {"name": "offending_field", "type": "STRING", "mode": "NULLABLE", "description": "Turns a graveyard into a diagnostic tool"},
+  {"name": "offending_value", "type": "STRING", "mode": "NULLABLE"},
+  {"name": "raw_payload", "type": "STRING", "mode": "NULLABLE"},
+  {"name": "pipeline_version", "type": "STRING", "mode": "REQUIRED"}
+]

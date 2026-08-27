@@ -1,0 +1,10 @@
+[
+  {"name": "ingest_time", "type": "TIMESTAMP", "mode": "REQUIRED", "description": "When the pipeline received it"},
+  {"name": "publish_time", "type": "TIMESTAMP", "mode": "NULLABLE", "description": "Pub/Sub publish timestamp"},
+  {"name": "pubsub_message_id", "type": "STRING", "mode": "NULLABLE"},
+  {"name": "ground_station_id", "type": "STRING", "mode": "NULLABLE", "description": "From message attributes, not the body"},
+  {"name": "attributes_json", "type": "STRING", "mode": "NULLABLE"},
+  {"name": "payload", "type": "STRING", "mode": "NULLABLE", "description": "Exact bytes as received, decoded as UTF-8"},
+  {"name": "payload_sha256", "type": "STRING", "mode": "NULLABLE", "description": "Proves byte-identical duplicate delivery"},
+  {"name": "pipeline_version", "type": "STRING", "mode": "NULLABLE"}
+]
