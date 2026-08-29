@@ -1,0 +1,366 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="2090" viewBox="0 0 1500 2090">
+<rect width="1500" height="2090" fill="#FFFFFF"/>
+<text x="40" y="48" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="38" fill="#123B5E" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="0">OrbitalSense — Satellite Telemetry Platform</text>
+<text x="40" y="80" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="21" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">End-to-end architecture, including every path a message can take when things go wrong</text>
+<line x1="40" y1="94" x2="1460" y2="94" stroke="#C6D2DC" stroke-width="2"/>
+<rect x="40" y="102" width="1420" height="248" rx="14" ry="14" fill="#F2F7FB" stroke="#C6D2DC" stroke-width="2"/>
+<text x="62" y="134" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="20" fill="#1B5E8C" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="1.5">SPACE SEGMENT</text>
+<text x="62" y="158" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="18" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">12 satellites · 4 subsystems each: power, thermal, comms, orbital</text>
+<g transform="translate(235,238) scale(0.88)">
+<rect x="-92" y="-15" width="44" height="30" fill="#DCE8F2" stroke="#123B5E" stroke-width="2.5"/>
+<line x1="-77.3" y1="-15" x2="-77.3" y2="15" stroke="#123B5E" stroke-width="1.4"/>
+<line x1="-62.6" y1="-15" x2="-62.6" y2="15" stroke="#123B5E" stroke-width="1.4"/>
+<line x1="-26" y1="0" x2="-48" y2="0" stroke="#123B5E" stroke-width="3"/>
+<rect x="48" y="-15" width="44" height="30" fill="#DCE8F2" stroke="#123B5E" stroke-width="2.5"/>
+<line x1="62.7" y1="-15" x2="62.7" y2="15" stroke="#123B5E" stroke-width="1.4"/>
+<line x1="77.4" y1="-15" x2="77.4" y2="15" stroke="#123B5E" stroke-width="1.4"/>
+<line x1="26" y1="0" x2="48" y2="0" stroke="#123B5E" stroke-width="3"/>
+<rect x="-26" y="-20" width="52" height="40" rx="7" fill="#FFFFFF" stroke="#123B5E" stroke-width="3"/>
+<rect x="-15" y="-10" width="30" height="9" rx="2" fill="#DCE8F2"/>
+<path d="M -13 20 L -13 30 M 13 20 L 13 30" stroke="#123B5E" stroke-width="2.5"/>
+<path d="M -22 34 A 22 12 0 0 0 22 34 Z" fill="#DCE8F2" stroke="#123B5E" stroke-width="2.5"/>
+</g>
+<g transform="translate(545,238) scale(0.88)">
+<rect x="-92" y="-15" width="44" height="30" fill="#DCE8F2" stroke="#123B5E" stroke-width="2.5"/>
+<line x1="-77.3" y1="-15" x2="-77.3" y2="15" stroke="#123B5E" stroke-width="1.4"/>
+<line x1="-62.6" y1="-15" x2="-62.6" y2="15" stroke="#123B5E" stroke-width="1.4"/>
+<line x1="-26" y1="0" x2="-48" y2="0" stroke="#123B5E" stroke-width="3"/>
+<rect x="48" y="-15" width="44" height="30" fill="#DCE8F2" stroke="#123B5E" stroke-width="2.5"/>
+<line x1="62.7" y1="-15" x2="62.7" y2="15" stroke="#123B5E" stroke-width="1.4"/>
+<line x1="77.4" y1="-15" x2="77.4" y2="15" stroke="#123B5E" stroke-width="1.4"/>
+<line x1="26" y1="0" x2="48" y2="0" stroke="#123B5E" stroke-width="3"/>
+<rect x="-26" y="-20" width="52" height="40" rx="7" fill="#FFFFFF" stroke="#123B5E" stroke-width="3"/>
+<rect x="-15" y="-10" width="30" height="9" rx="2" fill="#DCE8F2"/>
+<path d="M -13 20 L -13 30 M 13 20 L 13 30" stroke="#123B5E" stroke-width="2.5"/>
+<path d="M -22 34 A 22 12 0 0 0 22 34 Z" fill="#DCE8F2" stroke="#123B5E" stroke-width="2.5"/>
+</g>
+<g transform="translate(855,238) scale(0.88)">
+<rect x="-92" y="-15" width="44" height="30" fill="#E4E7EA" stroke="#6B7885" stroke-width="2.5"/>
+<line x1="-77.3" y1="-15" x2="-77.3" y2="15" stroke="#6B7885" stroke-width="1.4"/>
+<line x1="-62.6" y1="-15" x2="-62.6" y2="15" stroke="#6B7885" stroke-width="1.4"/>
+<line x1="-26" y1="0" x2="-48" y2="0" stroke="#6B7885" stroke-width="3"/>
+<rect x="48" y="-15" width="44" height="30" fill="#E4E7EA" stroke="#6B7885" stroke-width="2.5"/>
+<line x1="62.7" y1="-15" x2="62.7" y2="15" stroke="#6B7885" stroke-width="1.4"/>
+<line x1="77.4" y1="-15" x2="77.4" y2="15" stroke="#6B7885" stroke-width="1.4"/>
+<line x1="26" y1="0" x2="48" y2="0" stroke="#6B7885" stroke-width="3"/>
+<rect x="-26" y="-20" width="52" height="40" rx="7" fill="#FFFFFF" stroke="#6B7885" stroke-width="3"/>
+<rect x="-15" y="-10" width="30" height="9" rx="2" fill="#E4E7EA"/>
+<path d="M -13 20 L -13 30 M 13 20 L 13 30" stroke="#6B7885" stroke-width="2.5"/>
+<path d="M -22 34 A 22 12 0 0 0 22 34 Z" fill="#E4E7EA" stroke="#6B7885" stroke-width="2.5"/>
+</g>
+<g transform="translate(1215,238) scale(0.88)">
+<rect x="-92" y="-15" width="44" height="30" fill="#DCE8F2" stroke="#123B5E" stroke-width="2.5"/>
+<line x1="-77.3" y1="-15" x2="-77.3" y2="15" stroke="#123B5E" stroke-width="1.4"/>
+<line x1="-62.6" y1="-15" x2="-62.6" y2="15" stroke="#123B5E" stroke-width="1.4"/>
+<line x1="-26" y1="0" x2="-48" y2="0" stroke="#123B5E" stroke-width="3"/>
+<rect x="48" y="-15" width="44" height="30" fill="#DCE8F2" stroke="#123B5E" stroke-width="2.5"/>
+<line x1="62.7" y1="-15" x2="62.7" y2="15" stroke="#123B5E" stroke-width="1.4"/>
+<line x1="77.4" y1="-15" x2="77.4" y2="15" stroke="#123B5E" stroke-width="1.4"/>
+<line x1="26" y1="0" x2="48" y2="0" stroke="#123B5E" stroke-width="3"/>
+<rect x="-26" y="-20" width="52" height="40" rx="7" fill="#FFFFFF" stroke="#123B5E" stroke-width="3"/>
+<rect x="-15" y="-10" width="30" height="9" rx="2" fill="#DCE8F2"/>
+<path d="M -13 20 L -13 30 M 13 20 L 13 30" stroke="#123B5E" stroke-width="2.5"/>
+<path d="M -22 34 A 22 12 0 0 0 22 34 Z" fill="#DCE8F2" stroke="#123B5E" stroke-width="2.5"/>
+</g>
+<text x="235" y="316" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="19" fill="#123B5E" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">SAT-01</text>
+<text x="545" y="316" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="19" fill="#123B5E" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">SAT-02</text>
+<text x="855" y="316" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="19" fill="#8A6410" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">SAT-03 — in blackout</text>
+<text x="1215" y="316" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="19" fill="#123B5E" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">… SAT-12</text>
+<g transform="translate(742,148) scale(0.66)">
+<rect x="-30" y="-11" width="13" height="22" rx="2.5" fill="#F6EBD2" stroke="#8A6410" stroke-width="2.2"/>
+<rect x="-14" y="-11" width="13" height="22" rx="2.5" fill="#F6EBD2" stroke="#8A6410" stroke-width="2.2"/>
+<rect x="2" y="-11" width="13" height="22" rx="2.5" fill="#F6EBD2" stroke="#8A6410" stroke-width="2.2"/>
+<rect x="18" y="-11" width="13" height="22" rx="2.5" fill="#FFFFFF" stroke="#8A6410" stroke-width="2.2"/>
+</g>
+<text x="786" y="142" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17" fill="#8A6410" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="0">No station in view → buffer on board</text>
+<text x="786" y="164" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">bounded FIFO, 500 events, drained on next contact — this is what</text>
+<text x="786" y="184" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">creates out-of-order arrival and genuinely late data</text>
+<line x1="329" y1="248" x2="284.5" y2="367.8" stroke="#1B5E8C" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="7 6"/>
+<polygon points="280.0,380.0 278.2,365.5 290.9,370.2" fill="#1B5E8C"/>
+<line x1="639" y1="248" x2="594.5" y2="367.8" stroke="#1B5E8C" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="7 6"/>
+<polygon points="590.0,380.0 588.2,365.5 600.9,370.2" fill="#1B5E8C"/>
+<line x1="1309" y1="248" x2="1246.0" y2="368.5" stroke="#1B5E8C" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="7 6"/>
+<polygon points="1240.0,380.0 1240.0,365.3 1252.0,371.6" fill="#1B5E8C"/>
+<text x="440" y="372" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17" fill="#1B5E8C" text-anchor="middle" font-weight="normal" font-style="italic" letter-spacing="0">relayed via nearest station</text>
+<text x="930" y="372" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17" fill="#1B5E8C" text-anchor="middle" font-weight="normal" font-style="italic" letter-spacing="0">visibility from orbital geometry, 2 200 km horizon</text>
+<rect x="40" y="384" width="1420" height="196" rx="14" ry="14" fill="#F2F7FB" stroke="#C6D2DC" stroke-width="2"/>
+<text x="62" y="416" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="20" fill="#1B5E8C" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="1.5">GROUND SEGMENT</text>
+<g transform="translate(280,470) scale(0.8)">
+<path d="M -6 34 L -22 52 L 22 52 L 6 34 Z" fill="#DCE8F2" stroke="#123B5E" stroke-width="2.5"/>
+<line x1="0" y1="6" x2="0" y2="36" stroke="#123B5E" stroke-width="4"/>
+<g transform="rotate(-28)">
+<path d="M -36 4 A 36 30 0 0 1 36 4 Z" fill="#FFFFFF" stroke="#123B5E" stroke-width="3"/>
+<path d="M -22 2 A 22 18 0 0 1 22 2" fill="none" stroke="#C6D2DC" stroke-width="2"/>
+<line x1="0" y1="-26" x2="0" y2="-42" stroke="#123B5E" stroke-width="2.5"/>
+<circle cx="0" cy="-45" r="5" fill="#1B5E8C"/>
+</g></g>
+<text x="280" y="552" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="19" fill="#123B5E" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">GS-1 · Svalbard</text>
+<g transform="translate(590,470) scale(0.8)">
+<path d="M -6 34 L -22 52 L 22 52 L 6 34 Z" fill="#DCE8F2" stroke="#123B5E" stroke-width="2.5"/>
+<line x1="0" y1="6" x2="0" y2="36" stroke="#123B5E" stroke-width="4"/>
+<g transform="rotate(-28)">
+<path d="M -36 4 A 36 30 0 0 1 36 4 Z" fill="#FFFFFF" stroke="#123B5E" stroke-width="3"/>
+<path d="M -22 2 A 22 18 0 0 1 22 2" fill="none" stroke="#C6D2DC" stroke-width="2"/>
+<line x1="0" y1="-26" x2="0" y2="-42" stroke="#123B5E" stroke-width="2.5"/>
+<circle cx="0" cy="-45" r="5" fill="#1B5E8C"/>
+</g></g>
+<text x="590" y="552" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="19" fill="#123B5E" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">GS-2 · Cape Town</text>
+<g transform="translate(900,470) scale(0.8)">
+<path d="M -6 34 L -22 52 L 22 52 L 6 34 Z" fill="#DCE8F2" stroke="#123B5E" stroke-width="2.5"/>
+<line x1="0" y1="6" x2="0" y2="36" stroke="#123B5E" stroke-width="4"/>
+<g transform="rotate(-28)">
+<path d="M -36 4 A 36 30 0 0 1 36 4 Z" fill="#FFFFFF" stroke="#123B5E" stroke-width="3"/>
+<path d="M -22 2 A 22 18 0 0 1 22 2" fill="none" stroke="#C6D2DC" stroke-width="2"/>
+<line x1="0" y1="-26" x2="0" y2="-42" stroke="#123B5E" stroke-width="2.5"/>
+<circle cx="0" cy="-45" r="5" fill="#1B5E8C"/>
+</g></g>
+<text x="900" y="552" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="19" fill="#123B5E" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">GS-3 · Troll</text>
+<g transform="translate(1240,470) scale(0.8)">
+<path d="M -6 34 L -22 52 L 22 52 L 6 34 Z" fill="#DCE8F2" stroke="#123B5E" stroke-width="2.5"/>
+<line x1="0" y1="6" x2="0" y2="36" stroke="#123B5E" stroke-width="4"/>
+<g transform="rotate(-28)">
+<path d="M -36 4 A 36 30 0 0 1 36 4 Z" fill="#FFFFFF" stroke="#123B5E" stroke-width="3"/>
+<path d="M -22 2 A 22 18 0 0 1 22 2" fill="none" stroke="#C6D2DC" stroke-width="2"/>
+<line x1="0" y1="-26" x2="0" y2="-42" stroke="#123B5E" stroke-width="2.5"/>
+<circle cx="0" cy="-45" r="5" fill="#1B5E8C"/>
+</g></g>
+<text x="1240" y="552" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="19" fill="#123B5E" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">GS-4 · Chennai</text>
+<g transform="translate(1000,440) scale(0.52)">
+<path d="M 0 -24 L 26 20 L -26 20 Z" fill="#FBEDED" stroke="#8A6410" stroke-width="3" stroke-linejoin="round"/>
+<line x1="0" y1="-8" x2="0" y2="6" stroke="#8A6410" stroke-width="3.4" stroke-linecap="round"/>
+<circle cx="0" cy="13" r="2.6" fill="#8A6410"/>
+</g>
+<text x="1030" y="434" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16" fill="#8A6410" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="0">GS-3: intermittent link,</text>
+<text x="1030" y="454" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">up to 40 min delivery delay</text>
+<rect x="40" y="606" width="1420" height="1364" rx="16" ry="16" fill="#FFFFFF" stroke="#123B5E" stroke-width="3"/>
+<rect x="40" y="606" width="1420" height="44" rx="16" fill="#123B5E"/>
+<rect x="40" y="634" width="1420" height="16" fill="#123B5E"/>
+<text x="62" y="636" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="20" fill="#FFFFFF" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="0">GOOGLE CLOUD PLATFORM   —   every resource below is declared in Terraform</text>
+<rect x="80" y="672" width="580" height="148" rx="10" ry="10" fill="#F2F7FB" stroke="#1B5E8C" stroke-width="2.5"/>
+<g transform="translate(158,736) scale(1.0)">
+<rect x="-30" y="-22" width="60" height="44" rx="5" fill="#FFFFFF" stroke="#1B5E8C" stroke-width="3"/>
+<line x1="-20" y1="-22" x2="-20" y2="22" stroke="#1B5E8C" stroke-width="2"/>
+<line x1="-10" y1="-22" x2="-10" y2="22" stroke="#1B5E8C" stroke-width="2"/>
+<line x1="0" y1="-22" x2="0" y2="22" stroke="#1B5E8C" stroke-width="2"/>
+<line x1="10" y1="-22" x2="10" y2="22" stroke="#1B5E8C" stroke-width="2"/>
+<line x1="20" y1="-22" x2="20" y2="22" stroke="#1B5E8C" stroke-width="2"/>
+<rect x="-30" y="-22" width="60" height="9" fill="#1B5E8C"/>
+</g>
+<text x="224" y="706" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="24" fill="#123B5E" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="0">Cloud Run — telemetry producer</text>
+<text x="224" y="732" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17.5" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">Orbital visibility · buffer-and-burst emission</text>
+<text x="224" y="754" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17.5" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">Randomised fault injection + /inject endpoint</text>
+<g transform="translate(236,780) scale(0.9)">
+<circle cx="-9" cy="0" r="8.5" fill="none" stroke="#1F6B4D" stroke-width="3"/>
+<line x1="-1" y1="0" x2="17" y2="0" stroke="#1F6B4D" stroke-width="3"/>
+<line x1="10" y1="0" x2="10" y2="7" stroke="#1F6B4D" stroke-width="3"/>
+<line x1="17" y1="0" x2="17" y2="8" stroke="#1F6B4D" stroke-width="3"/>
+</g>
+<text x="258" y="786" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16" fill="#1F6B4D" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="0">SA: publisher on this topic only</text>
+<rect x="700" y="672" width="340" height="148" rx="10" ry="10" fill="#FFFFFF" stroke="#C6D2DC" stroke-width="2" stroke-dasharray="7 6"/>
+<g transform="translate(762,748) scale(0.85)">
+<rect x="-30" y="7" width="60" height="18" rx="3" fill="#FFFFFF" stroke="#1B5E8C" stroke-width="2.6"/>
+<circle cx="-19" cy="16" r="3.4" fill="#1B5E8C"/>
+<rect x="-30" y="-11" width="60" height="18" rx="3" fill="#FFFFFF" stroke="#1B5E8C" stroke-width="2.6"/>
+<circle cx="-19" cy="-2" r="3.4" fill="#1B5E8C"/>
+<rect x="-30" y="-29" width="60" height="18" rx="3" fill="#FFFFFF" stroke="#1B5E8C" stroke-width="2.6"/>
+<circle cx="-19" cy="-20" r="3.4" fill="#1B5E8C"/>
+</g>
+<text x="812" y="722" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="20" fill="#123B5E" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="0">Artifact Registry</text>
+<text x="812" y="748" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">Container images,</text>
+<text x="812" y="770" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">keep 5 most recent</text>
+<line x1="700" y1="748" x2="679.0" y2="748.0" stroke="#6B7885" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="6 5"/>
+<polygon points="666.0,748.0 679.0,741.2 679.0,754.8" fill="#6B7885"/>
+<rect x="1080" y="672" width="340" height="148" rx="10" ry="10" fill="#FFFFFF" stroke="#C6D2DC" stroke-width="2" stroke-dasharray="7 6"/>
+<g transform="translate(1142,748) scale(0.85)">
+<path d="M -30 -18 L 30 -18 L 22 24 L -22 24 Z" fill="#DCE8F2" stroke="#1B5E8C" stroke-width="3" stroke-linejoin="round"/>
+<line x1="-34" y1="-18" x2="34" y2="-18" stroke="#1B5E8C" stroke-width="3.5" stroke-linecap="round"/>
+</g>
+<text x="1192" y="712" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="20" fill="#123B5E" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="0">Cloud Storage</text>
+<text x="1192" y="738" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">Terraform remote state</text>
+<text x="1192" y="760" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">Dataflow temp / staging</text>
+<text x="1192" y="782" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">Raw archive, 90-day rule</text>
+<line x1="300" y1="820" x2="300.0" y2="859.0" stroke="#123B5E" stroke-width="3.4" stroke-linecap="round"/>
+<polygon points="300.0,872.0 293.2,859.0 306.8,859.0" fill="#123B5E"/>
+<text x="322" y="838" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17.5" fill="#123B5E" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">publish  ·  body = telemetry JSON</text>
+<text x="322" y="860" font-family="'DejaVu Sans Mono', Consolas, monospace" font-size="16" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">attributes = ground_station_id, event_id</text>
+<rect x="80" y="876" width="560" height="144" rx="10" ry="10" fill="#F2F7FB" stroke="#1B5E8C" stroke-width="2.5"/>
+<g transform="translate(150,950) scale(0.92)">
+<rect x="-34" y="-30" width="62" height="26" rx="4" fill="#FFFFFF" stroke="#1B5E8C" stroke-width="2.6"/>
+<rect x="-34" y="-14" width="62" height="26" rx="4" fill="#FFFFFF" stroke="#1B5E8C" stroke-width="2.6"/>
+<rect x="-34" y="2" width="62" height="26" rx="4" fill="#DCE8F2" stroke="#1B5E8C" stroke-width="2.6"/>
+<path d="M -34 2 L -3 22 L 28 2" fill="none" stroke="#1B5E8C" stroke-width="2.6"/>
+</g>
+<text x="226" y="908" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="24" fill="#123B5E" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="0">Pub/Sub topic</text>
+<text x="226" y="934" font-family="'DejaVu Sans Mono', Consolas, monospace" font-size="17" fill="#1B5E8C" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">orbitalsense-telemetry</text>
+<text x="226" y="958" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17.5" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">7-day retention · replay window</text>
+<text x="226" y="982" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17.5" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">At-least-once: duplicates are</text>
+<text x="226" y="1004" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17.5" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">guaranteed, not hypothetical</text>
+<line x1="640" y1="948" x2="683.0" y2="948.0" stroke="#123B5E" stroke-width="3.2" stroke-linecap="round"/>
+<polygon points="696.0,948.0 683.0,954.8 683.0,941.2" fill="#123B5E"/>
+<rect x="700" y="876" width="400" height="144" rx="10" ry="10" fill="#F2F7FB" stroke="#1B5E8C" stroke-width="2.5"/>
+<g transform="translate(766,944) scale(0.9)">
+<path d="M -32 -20 L 32 -20 L 9 8 L 9 26 L -9 34 L -9 8 Z" fill="#DCE8F2" stroke="#1B5E8C" stroke-width="3" stroke-linejoin="round"/>
+</g>
+<text x="824" y="908" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="24" fill="#123B5E" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="0">Subscription</text>
+<text x="824" y="936" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17.5" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">ack deadline 60 s</text>
+<text x="824" y="958" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17.5" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">retry 10 s → 600 s</text>
+<text x="824" y="980" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17.5" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">retain acked → replay</text>
+<text x="824" y="1002" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17.5" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">max 5 attempts</text>
+<line x1="1100" y1="948" x2="1133.0" y2="948.0" stroke="#A32F2F" stroke-width="3" stroke-linecap="round"/>
+<polygon points="1146.0,948.0 1133.0,954.8 1133.0,941.2" fill="#A32F2F"/>
+<rect x="1150" y="882" width="270" height="132" rx="10" ry="10" fill="#FBEDED" stroke="#A32F2F" stroke-width="2.5"/>
+<g transform="translate(1196,930) scale(0.66)">
+<path d="M 0 -24 L 26 20 L -26 20 Z" fill="#FBEDED" stroke="#A32F2F" stroke-width="3" stroke-linejoin="round"/>
+<line x1="0" y1="-8" x2="0" y2="6" stroke="#A32F2F" stroke-width="3.4" stroke-linecap="round"/>
+<circle cx="0" cy="13" r="2.6" fill="#A32F2F"/>
+</g>
+<text x="1230" y="918" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="20" fill="#A32F2F" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="0">Dead-letter</text>
+<text x="1230" y="940" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="20" fill="#A32F2F" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="0">topic + hold sub</text>
+<text x="1168" y="972" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="15.5" fill="#A32F2F" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="0">INFRASTRUCTURE failure:</text>
+<text x="1168" y="992" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="15.5" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">crash, OOM, repeated nack.</text>
+<line x1="900" y1="1020" x2="900.0" y2="1051.0" stroke="#123B5E" stroke-width="3.4" stroke-linecap="round"/>
+<polygon points="900.0,1064.0 893.2,1051.0 906.8,1051.0" fill="#123B5E"/>
+<rect x="80" y="1068" width="1340" height="232" rx="10" ry="10" fill="#F2F7FB" stroke="#1B5E8C" stroke-width="2.5"/>
+<g transform="translate(134,1112) scale(0.58)">
+<rect x="-7" y="-7" width="14" height="14" rx="2" fill="#1B5E8C" transform="translate(34.0,0.0) rotate(0.0)"/>
+<rect x="-7" y="-7" width="14" height="14" rx="2" fill="#1B5E8C" transform="translate(24.0,24.0) rotate(45.0)"/>
+<rect x="-7" y="-7" width="14" height="14" rx="2" fill="#1B5E8C" transform="translate(0.0,34.0) rotate(90.0)"/>
+<rect x="-7" y="-7" width="14" height="14" rx="2" fill="#1B5E8C" transform="translate(-24.0,24.0) rotate(135.0)"/>
+<rect x="-7" y="-7" width="14" height="14" rx="2" fill="#1B5E8C" transform="translate(-34.0,0.0) rotate(180.0)"/>
+<rect x="-7" y="-7" width="14" height="14" rx="2" fill="#1B5E8C" transform="translate(-24.0,-24.0) rotate(-135.0)"/>
+<rect x="-7" y="-7" width="14" height="14" rx="2" fill="#1B5E8C" transform="translate(-0.0,-34.0) rotate(-90.0)"/>
+<rect x="-7" y="-7" width="14" height="14" rx="2" fill="#1B5E8C" transform="translate(24.0,-24.0) rotate(-45.0)"/>
+<circle cx="0" cy="0" r="27" fill="#1B5E8C"/>
+<circle cx="0" cy="0" r="13" fill="#FFFFFF"/>
+</g>
+<text x="178" y="1098" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="24" fill="#123B5E" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="0">Dataflow — streaming Apache Beam pipeline</text>
+<text x="178" y="1124" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17.5" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">Streaming Engine · state held off-worker, so it survives worker loss</text>
+<g transform="translate(1120,1110) scale(0.9)">
+<circle cx="-9" cy="0" r="8.5" fill="none" stroke="#1F6B4D" stroke-width="3"/>
+<line x1="-1" y1="0" x2="17" y2="0" stroke="#1F6B4D" stroke-width="3"/>
+<line x1="10" y1="0" x2="10" y2="7" stroke="#1F6B4D" stroke-width="3"/>
+<line x1="17" y1="0" x2="17" y2="8" stroke="#1F6B4D" stroke-width="3"/>
+</g>
+<text x="1144" y="1116" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16" fill="#1F6B4D" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="0">SA: subscriber + BQ editor</text>
+<rect x="108" y="1150" width="200" height="104" rx="9" ry="9" fill="#FFFFFF" stroke="#1B5E8C" stroke-width="2.4"/>
+<circle cx="136" cy="1180" r="17" fill="#1B5E8C"/>
+<text x="136" y="1187" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="19" fill="#FFFFFF" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">1</text>
+<text x="222.0" y="1187" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="21" fill="#123B5E" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">Decode</text>
+<text x="208.0" y="1222" font-family="'DejaVu Sans Mono', Consolas, monospace" font-size="16" fill="#6B7885" text-anchor="middle" font-weight="normal" font-style="normal" letter-spacing="0">+ SHA-256</text>
+<line x1="311" y1="1202" x2="321.0" y2="1202.0" stroke="#123B5E" stroke-width="2.6" stroke-linecap="round"/>
+<polygon points="331.0,1202.0 321.0,1207.2 321.0,1196.8" fill="#123B5E"/>
+<rect x="334" y="1150" width="200" height="104" rx="9" ry="9" fill="#FFFFFF" stroke="#1B5E8C" stroke-width="2.4"/>
+<circle cx="362" cy="1180" r="17" fill="#1B5E8C"/>
+<text x="362" y="1187" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="19" fill="#FFFFFF" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">2</text>
+<text x="448.0" y="1187" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="21" fill="#123B5E" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">Parse</text>
+<text x="434.0" y="1222" font-family="'DejaVu Sans Mono', Consolas, monospace" font-size="16" fill="#6B7885" text-anchor="middle" font-weight="normal" font-style="normal" letter-spacing="0">JSON</text>
+<line x1="537" y1="1202" x2="547.0" y2="1202.0" stroke="#123B5E" stroke-width="2.6" stroke-linecap="round"/>
+<polygon points="557.0,1202.0 547.0,1207.2 547.0,1196.8" fill="#123B5E"/>
+<rect x="560" y="1150" width="200" height="104" rx="9" ry="9" fill="#FFFFFF" stroke="#1B5E8C" stroke-width="2.4"/>
+<circle cx="588" cy="1180" r="17" fill="#1B5E8C"/>
+<text x="588" y="1187" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="19" fill="#FFFFFF" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">3</text>
+<text x="674.0" y="1187" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="21" fill="#123B5E" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">Validate</text>
+<text x="660.0" y="1222" font-family="'DejaVu Sans Mono', Consolas, monospace" font-size="16" fill="#6B7885" text-anchor="middle" font-weight="normal" font-style="normal" letter-spacing="0">schema + bounds</text>
+<line x1="763" y1="1202" x2="773.0" y2="1202.0" stroke="#123B5E" stroke-width="2.6" stroke-linecap="round"/>
+<polygon points="783.0,1202.0 773.0,1207.2 773.0,1196.8" fill="#123B5E"/>
+<rect x="786" y="1150" width="200" height="104" rx="9" ry="9" fill="#FFFFFF" stroke="#1B5E8C" stroke-width="2.4"/>
+<circle cx="814" cy="1180" r="17" fill="#1B5E8C"/>
+<text x="814" y="1187" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="19" fill="#FFFFFF" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">4</text>
+<text x="900.0" y="1187" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="21" fill="#123B5E" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">Enrich</text>
+<text x="886.0" y="1222" font-family="'DejaVu Sans Mono', Consolas, monospace" font-size="16" fill="#6B7885" text-anchor="middle" font-weight="normal" font-style="normal" letter-spacing="0">ingest_time, lag</text>
+<line x1="989" y1="1202" x2="999.0" y2="1202.0" stroke="#123B5E" stroke-width="2.6" stroke-linecap="round"/>
+<polygon points="1009.0,1202.0 999.0,1207.2 999.0,1196.8" fill="#123B5E"/>
+<rect x="1012" y="1150" width="200" height="104" rx="9" ry="9" fill="#FFFFFF" stroke="#1B5E8C" stroke-width="2.4"/>
+<circle cx="1040" cy="1180" r="17" fill="#1B5E8C"/>
+<text x="1040" y="1187" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="19" fill="#FFFFFF" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">5</text>
+<text x="1126.0" y="1187" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="21" fill="#123B5E" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">Deduplicate</text>
+<text x="1112.0" y="1222" font-family="'DejaVu Sans Mono', Consolas, monospace" font-size="16" fill="#6B7885" text-anchor="middle" font-weight="normal" font-style="normal" letter-spacing="0">key = event_id</text>
+<line x1="1215" y1="1202" x2="1225.0" y2="1202.0" stroke="#123B5E" stroke-width="2.6" stroke-linecap="round"/>
+<polygon points="1235.0,1202.0 1225.0,1207.2 1225.0,1196.8" fill="#123B5E"/>
+<rect x="1238" y="1150" width="200" height="104" rx="9" ry="9" fill="#FFFFFF" stroke="#1B5E8C" stroke-width="2.4"/>
+<circle cx="1266" cy="1180" r="17" fill="#1B5E8C"/>
+<text x="1266" y="1187" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="19" fill="#FFFFFF" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">6</text>
+<text x="1352.0" y="1187" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="21" fill="#123B5E" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">Window</text>
+<text x="1338.0" y="1222" font-family="'DejaVu Sans Mono', Consolas, monospace" font-size="16" fill="#6B7885" text-anchor="middle" font-weight="normal" font-style="normal" letter-spacing="0">event time, 45 min</text>
+<text x="660.0" y="1272" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="15.5" fill="#8A6410" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">plausible ≠ nominal</text>
+<text x="1112.0" y="1272" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="15.5" fill="#1F6B4D" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">stable across resends</text>
+<path d="M 208.0 1300 L 208.0 1330 L 305 1330 L 305 1446" fill="none" stroke="#6B7885" stroke-width="3" stroke-linecap="round"/>
+<polygon points="305.0,1446.0 293.1,1437.4 305.2,1431.3" fill="#6B7885"/>
+<path d="M 434.0 1300 L 434.0 1358 L 1195 1358 L 1195 1446" fill="none" stroke="#A32F2F" stroke-width="3" stroke-linecap="round" stroke-dasharray="9 6"/>
+<polygon points="1195.0,1446.0 1180.7,1449.4 1184.0,1436.3" fill="#A32F2F"/>
+<path d="M 660.0 1300 L 660.0 1358 L 1229 1358 L 1229 1446" fill="none" stroke="#A32F2F" stroke-width="3" stroke-linecap="round" stroke-dasharray="9 6"/>
+<polygon points="1229.0,1446.0 1214.5,1448.2 1218.8,1435.4" fill="#A32F2F"/>
+<path d="M 1338.0 1300 L 1338.0 1386 L 750 1386 L 750 1446" fill="none" stroke="#123B5E" stroke-width="3.6" stroke-linecap="round"/>
+<polygon points="750.0,1446.0 760.3,1435.5 764.5,1448.4" fill="#123B5E"/>
+<path d="M 175.0 1454.0 L 175.0 1586.0 A 130.0 14 0 0 0 435.0 1586.0 L 435.0 1454.0 Z" fill="#EDEFF2" stroke="#6B7885" stroke-width="3"/>
+<ellipse cx="305" cy="1454.0" rx="130.0" ry="14" fill="#FFFFFF" stroke="#6B7885" stroke-width="3"/>
+<rect x="263" y="1514" width="13" height="22" rx="2" fill="#6B7885" opacity="0.55"/>
+<rect x="287" y="1502" width="13" height="34" rx="2" fill="#6B7885" opacity="0.55"/>
+<rect x="311" y="1520" width="13" height="16" rx="2" fill="#6B7885" opacity="0.55"/>
+<rect x="335" y="1508" width="13" height="28" rx="2" fill="#6B7885" opacity="0.55"/>
+<text x="305" y="1620" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="15.5" fill="#6B7885" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="2">BigQuery table</text>
+<text x="305" y="1648" font-family="'DejaVu Sans Mono', Consolas, monospace" font-size="23" fill="#1F2A33" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">raw_telemetry</text>
+<text x="305" y="1678" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16.5" fill="#6B7885" text-anchor="middle" font-weight="normal" font-style="normal" letter-spacing="0">Exactly what arrived, byte for byte.</text>
+<text x="305" y="1699" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16.5" fill="#6B7885" text-anchor="middle" font-weight="normal" font-style="normal" letter-spacing="0">Written before parsing, so even</text>
+<text x="305" y="1720" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16.5" fill="#6B7885" text-anchor="middle" font-weight="normal" font-style="normal" letter-spacing="0">undecodable bytes survive.</text>
+<text x="305" y="1741" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16.5" fill="#6B7885" text-anchor="middle" font-weight="normal" font-style="normal" letter-spacing="0">Duplicates retained on purpose.</text>
+<path d="M 620.0 1454.0 L 620.0 1586.0 A 130.0 14 0 0 0 880.0 1586.0 L 880.0 1454.0 Z" fill="#DCE8F2" stroke="#1B5E8C" stroke-width="3"/>
+<ellipse cx="750" cy="1454.0" rx="130.0" ry="14" fill="#FFFFFF" stroke="#1B5E8C" stroke-width="3"/>
+<rect x="708" y="1514" width="13" height="22" rx="2" fill="#1B5E8C" opacity="0.55"/>
+<rect x="732" y="1502" width="13" height="34" rx="2" fill="#1B5E8C" opacity="0.55"/>
+<rect x="756" y="1520" width="13" height="16" rx="2" fill="#1B5E8C" opacity="0.55"/>
+<rect x="780" y="1508" width="13" height="28" rx="2" fill="#1B5E8C" opacity="0.55"/>
+<text x="750" y="1620" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="15.5" fill="#6B7885" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="2">BigQuery table</text>
+<text x="750" y="1648" font-family="'DejaVu Sans Mono', Consolas, monospace" font-size="23" fill="#123B5E" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">curated_telemetry</text>
+<text x="750" y="1678" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16.5" fill="#6B7885" text-anchor="middle" font-weight="normal" font-style="normal" letter-spacing="0">Every row trusted as a real reading.</text>
+<text x="750" y="1699" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16.5" fill="#6B7885" text-anchor="middle" font-weight="normal" font-style="normal" letter-spacing="0">Deduplicated on producer event_id.</text>
+<text x="750" y="1720" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16.5" fill="#6B7885" text-anchor="middle" font-weight="normal" font-style="normal" letter-spacing="0">Late data kept and flagged, never</text>
+<text x="750" y="1741" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16.5" fill="#6B7885" text-anchor="middle" font-weight="normal" font-style="normal" letter-spacing="0">dropped — lateness is not invalidity.</text>
+<path d="M 1065.0 1454.0 L 1065.0 1586.0 A 130.0 14 0 0 0 1325.0 1586.0 L 1325.0 1454.0 Z" fill="#FBEDED" stroke="#A32F2F" stroke-width="3"/>
+<ellipse cx="1195" cy="1454.0" rx="130.0" ry="14" fill="#FFFFFF" stroke="#A32F2F" stroke-width="3"/>
+<rect x="1153" y="1514" width="13" height="22" rx="2" fill="#A32F2F" opacity="0.55"/>
+<rect x="1177" y="1502" width="13" height="34" rx="2" fill="#A32F2F" opacity="0.55"/>
+<rect x="1201" y="1520" width="13" height="16" rx="2" fill="#A32F2F" opacity="0.55"/>
+<rect x="1225" y="1508" width="13" height="28" rx="2" fill="#A32F2F" opacity="0.55"/>
+<text x="1195" y="1620" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="15.5" fill="#6B7885" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="2">BigQuery table</text>
+<text x="1195" y="1648" font-family="'DejaVu Sans Mono', Consolas, monospace" font-size="23" fill="#A32F2F" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">quarantine_telemetry</text>
+<text x="1195" y="1678" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16.5" fill="#6B7885" text-anchor="middle" font-weight="normal" font-style="normal" letter-spacing="0">DATA failure — reason code plus the</text>
+<text x="1195" y="1699" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16.5" fill="#6B7885" text-anchor="middle" font-weight="normal" font-style="normal" letter-spacing="0">offending field and value recorded.</text>
+<text x="1195" y="1720" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16.5" fill="#6B7885" text-anchor="middle" font-weight="normal" font-style="normal" letter-spacing="0">MALFORMED_JSON · SCHEMA_DRIFT ·</text>
+<text x="1195" y="1741" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16.5" fill="#6B7885" text-anchor="middle" font-weight="normal" font-style="normal" letter-spacing="0">OUT_OF_BOUNDS · TIMESTAMP_IN_FUTURE</text>
+<path d="M 175 1520 L 62 1520 L 62 1044 L 830 1044 L 830 1026" fill="none" stroke="#1F6B4D" stroke-width="2.6" stroke-dasharray="9 7"/>
+<line x1="830" y1="1030" x2="830.0" y2="1035.0" stroke="#1F6B4D" stroke-width="2.6" stroke-linecap="round"/>
+<polygon points="830.0,1022.0 836.8,1035.0 823.2,1035.0" fill="#1F6B4D"/>
+<text x="92" y="1066" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16.5" fill="#1F6B4D" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="0">replay / reprocess — seek the subscription back to a timestamp</text>
+<line x1="750" y1="1762" x2="750.0" y2="1791.0" stroke="#123B5E" stroke-width="3" stroke-linecap="round"/>
+<polygon points="750.0,1804.0 743.2,1791.0 756.8,1791.0" fill="#123B5E"/>
+<path d="M 1195 1762 L 1195 1776 L 900 1776 L 900 1804" fill="none" stroke="#A32F2F" stroke-width="3" stroke-linecap="round" stroke-dasharray="9 6"/>
+<polygon points="900.0,1804.0 911.9,1795.5 913.8,1808.9" fill="#A32F2F"/>
+<rect x="430" y="1810" width="640" height="122" rx="10" ry="10" fill="#F2F7FB" stroke="#123B5E" stroke-width="2.5"/>
+<g transform="translate(504,1870) scale(1.05)">
+<circle cx="0" cy="-16" r="13" fill="#FFFFFF" stroke="#123B5E" stroke-width="3"/>
+<path d="M -22 22 A 22 22 0 0 1 22 22 Z" fill="#DCE8F2" stroke="#123B5E" stroke-width="3"/>
+</g>
+<text x="556" y="1846" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="24" fill="#123B5E" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="0">Mission operations</text>
+<text x="556" y="1872" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">Four operational queries: volume vs coverage, battery trend,</text>
+<text x="556" y="1894" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">weakest-signal window, alerts joined against quarantine</text>
+<text x="556" y="1918" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16.5" fill="#A32F2F" text-anchor="start" font-weight="normal" font-style="italic" letter-spacing="0">The fourth is unanswerable without the quarantine table.</text>
+<line x1="40" y1="1998" x2="1460" y2="1998" stroke="#C6D2DC" stroke-width="2"/>
+<text x="40" y="2032" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="18" fill="#123B5E" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="1.5">LEGEND</text>
+<line x1="150" y1="2024" x2="194" y2="2024" stroke="#123B5E" stroke-width="3.6"/>
+<polygon points="206,2024 193,2018 193,2030" fill="#123B5E"/>
+<text x="218" y="2028" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17" fill="#1F2A33" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="0">Happy path</text>
+<text x="218" y="2050" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="15.5" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">valid telemetry → curated</text>
+<line x1="510" y1="2024" x2="554" y2="2024" stroke="#A32F2F" stroke-width="3.6" stroke-dasharray="9 6"/>
+<polygon points="566,2024 553,2018 553,2030" fill="#A32F2F"/>
+<text x="578" y="2028" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17" fill="#1F2A33" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="0">Failure path</text>
+<text x="578" y="2050" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="15.5" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">rejected, always inspectable</text>
+<line x1="890" y1="2024" x2="934" y2="2024" stroke="#6B7885" stroke-width="3.6"/>
+<polygon points="946,2024 933,2018 933,2030" fill="#6B7885"/>
+<text x="958" y="2028" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17" fill="#1F2A33" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="0">Unconditional</text>
+<text x="958" y="2050" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="15.5" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">raw, written before validation</text>
+<line x1="1215" y1="2024" x2="1259" y2="2024" stroke="#1F6B4D" stroke-width="3.6" stroke-dasharray="9 7"/>
+<polygon points="1271,2024 1258,2018 1258,2030" fill="#1F6B4D"/>
+<text x="1283" y="2028" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17" fill="#1F2A33" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="0">Replay</text>
+<text x="1283" y="2050" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="15.5" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">reprocessing and identity</text>
+</svg>

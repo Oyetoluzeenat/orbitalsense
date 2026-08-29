@@ -1,0 +1,52 @@
+flowchart TB
+  subgraph SPACE["Space segment (simulated)"]
+    SATS["12 satellites<br/>4 subsystems each<br/>on-board buffer, 500 events"]
+  end
+
+  subgraph GROUND["Ground segment"]
+    GS["4 ground stations<br/>geometric visibility, 2200 km horizon<br/>nearest-station selection"]
+  end
+
+  subgraph GCP["Google Cloud (all Terraform-managed)"]
+    CR["Cloud Run: producer<br/>SA: orbitalsense-producer<br/>pubsub.publisher on topic only"]
+    AR[("Artifact Registry")]
+    PS["Pub/Sub topic<br/>orbitalsense-telemetry<br/>7-day retention"]
+    SUB["Subscription<br/>ack 60s, retry 10s-600s<br/>max 5 delivery attempts"]
+    DLQ["Pub/Sub DLQ topic<br/>+ hold subscription<br/>INFRASTRUCTURE failures"]
+
+    subgraph DF["Dataflow: streaming Beam pipeline"]
+      P1["Decode + hash"]
+      P2["Parse JSON"]
+      P3["Validate: mandatory fields,<br/>types, plausibility bounds,<br/>timestamp sanity"]
+      P4["Enrich: ingest_time,<br/>pipeline_version, station,<br/>lag_seconds, is_late"]
+      P5["Deduplicate<br/>key = producer event_id<br/>60-min processing-time state"]
+      P6["Event-time window<br/>60s fixed, 45-min lateness"]
+    end
+
+    RAW[("BigQuery raw_telemetry<br/>partition ingest_time<br/>cluster ground_station_id<br/>90-day expiry")]
+    CUR[("BigQuery curated_telemetry<br/>partition ingest_time<br/>cluster satellite_id, subsystem")]
+    QUAR[("BigQuery quarantine_telemetry<br/>partition ingest_time<br/>cluster reason_code, station")]
+    GCS[("GCS: Dataflow temp/staging<br/>7-day lifecycle")]
+    OPS["Mission ops<br/>4 analytics queries"]
+  end
+
+  SATS -->|"in view"| GS
+  SATS -.->|"no station in view:<br/>buffer on board"| SATS
+  GS --> CR
+  AR -.->|image| CR
+  CR -->|"publish + attributes<br/>ground_station_id, event_id"| PS
+  PS --> SUB
+  SUB --> P1 --> P2 --> P3 --> P4 --> P5 --> P6
+  P1 -->|"always, unmodified"| RAW
+  P2 -->|"MALFORMED_JSON"| QUAR
+  P3 -->|"OUT_OF_BOUNDS, SCHEMA_DRIFT,<br/>MISSING_MANDATORY_FIELD,<br/>WRONG_TYPE, TIMESTAMP_IN_FUTURE"| QUAR
+  P5 -.->|"duplicate suppressed<br/>(retained in raw)"| RAW
+  P6 --> CUR
+  SUB -.->|"5 failed deliveries"| DLQ
+  DF --- GCS
+  CUR --> OPS
+  QUAR --> OPS
+  RAW -.->|"replay / reprocess"| SUB
+
+  classDef fail fill:#5a1f1f,stroke:#c33,color:#fff
+  class QUAR,DLQ fail

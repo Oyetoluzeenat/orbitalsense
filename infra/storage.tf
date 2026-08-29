@@ -1,4 +1,10 @@
 resource "google_storage_bucket" "dataflow_temp" {
+  # Dataflow churns temp files constantly; soft delete would retain every
+  # deletion for 7 days and bill for it.
+  soft_delete_policy {
+    retention_duration_seconds = 0
+  }
+
   name                        = "${var.project_id}-dataflow-temp"
   location                    = var.region
   uniform_bucket_level_access = true

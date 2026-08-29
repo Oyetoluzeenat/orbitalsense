@@ -93,3 +93,12 @@ resource "google_pubsub_subscription_iam_member" "agent_ack" {
   role         = "roles/pubsub.subscriber"
   member       = local.pubsub_agent
 }
+
+# Dataflow needs pubsub.subscriptions.get for backlog reporting and Streaming
+# Engine bookkeeping. subscriber alone permits pulling but not describing, which
+# surfaces as GETTING_PUBSUB_SUBSCRIPTION_FAILED in the job log.
+resource "google_project_iam_member" "dataflow_pubsub_viewer" {
+  project = var.project_id
+  role    = "roles/pubsub.viewer"
+  member  = "serviceAccount:${google_service_account.dataflow.email}"
+}

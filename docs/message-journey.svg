@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1810" viewBox="0 0 1500 1810">
+<rect width="1500" height="1810" fill="#FFFFFF"/>
+<text x="40" y="48" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="34" fill="#123B5E" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="0">The journey of one message — and every point it could be lost</text>
+<text x="40" y="80" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="20" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">Nine hops from spacecraft to queryable row. Three carry real risk; one loses data on purpose.</text>
+<line x1="40" y1="96" x2="1460" y2="96" stroke="#C6D2DC" stroke-width="2"/>
+<line x1="118" y1="236" x2="118" y2="326" stroke="#C6D2DC" stroke-width="3"/>
+<rect x="70" y="128" width="1390" height="148" rx="12" ry="12" fill="#F2F7FB" stroke="#C6D2DC" stroke-width="1.6"/>
+<circle cx="118" cy="190" r="44" fill="#FFFFFF" stroke="#1B5E8C" stroke-width="2.6"/>
+<g transform="translate(118,190)">
+<rect x="-26" y="-19" width="52" height="38" rx="4" fill="#FFFFFF" stroke="#1B5E8C" stroke-width="2.8"/>
+<line x1="-17.2" y1="-19" x2="-17.2" y2="19" stroke="#1B5E8C" stroke-width="1.9"/>
+<line x1="-8.6" y1="-19" x2="-8.6" y2="19" stroke="#1B5E8C" stroke-width="1.9"/>
+<line x1="0.0" y1="-19" x2="0.0" y2="19" stroke="#1B5E8C" stroke-width="1.9"/>
+<line x1="8.6" y1="-19" x2="8.6" y2="19" stroke="#1B5E8C" stroke-width="1.9"/>
+<line x1="17.2" y1="-19" x2="17.2" y2="19" stroke="#1B5E8C" stroke-width="1.9"/>
+<rect x="-26" y="-19" width="52" height="8" fill="#1B5E8C"/></g>
+<circle cx="82" cy="156" r="17" fill="#123B5E"/>
+<text x="82" y="162" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="19" fill="#FFFFFF" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">1</text>
+<text x="210" y="174" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="23" fill="#123B5E" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="0">Producer builds the event</text>
+<text x="210" y="204" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17.5" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">event_id generated once, here. Reused on every resend — this is the</text>
+<text x="210" y="228" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17.5" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">entire basis of deduplication downstream.</text>
+<rect x="880" y="146" width="560" height="112" rx="9" ry="9" fill="#F9F1DC" stroke="#8A6410" stroke-width="2"/>
+<text x="900" y="174" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="15.5" fill="#8A6410" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="1.2">LOSS POSSIBLE</text>
+<text x="900" y="204" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16" fill="#1F2A33" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">On-board buffer overflow during an extended blackout.</text>
+<text x="900" y="226" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16" fill="#1F2A33" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">Bounded FIFO, oldest evicted. The one place we knowingly discard.</text>
+<line x1="118" y1="418" x2="118" y2="508" stroke="#C6D2DC" stroke-width="3"/>
+<rect x="70" y="310" width="1390" height="148" rx="12" ry="12" fill="#FFFFFF" stroke="#C6D2DC" stroke-width="1.6"/>
+<circle cx="118" cy="372" r="44" fill="#FFFFFF" stroke="#1B5E8C" stroke-width="2.6"/>
+<g transform="translate(118,372)">
+<path d="M -24 12 L 24 12" stroke="#1B5E8C" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M 0 -20 L 0 6 M -13 -8 L 0 -21 L 13 -8" fill="none" stroke="#1B5E8C" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></g>
+<circle cx="82" cy="338" r="17" fill="#123B5E"/>
+<text x="82" y="344" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="19" fill="#FFFFFF" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">2</text>
+<text x="210" y="356" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="23" fill="#123B5E" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="0">Client publishes to Pub/Sub</text>
+<text x="210" y="386" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17.5" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">Payload plus attributes: ground_station_id, event_id, satellite_id.</text>
+<text x="210" y="410" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17.5" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">The station adds its own identity; the satellite cannot know it.</text>
+<rect x="880" y="328" width="560" height="112" rx="9" ry="9" fill="#F9F1DC" stroke="#8A6410" stroke-width="2"/>
+<text x="900" y="356" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="15.5" fill="#8A6410" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="1.2">LOSS POSSIBLE</text>
+<text x="900" y="386" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16" fill="#1F2A33" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">The client batches asynchronously. An instance terminating with</text>
+<text x="900" y="408" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16" fill="#1F2A33" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">unflushed batches loses them. Mitigation: flush on SIGTERM.</text>
+<line x1="118" y1="600" x2="118" y2="690" stroke="#C6D2DC" stroke-width="3"/>
+<rect x="70" y="492" width="1390" height="148" rx="12" ry="12" fill="#F2F7FB" stroke="#C6D2DC" stroke-width="1.6"/>
+<circle cx="118" cy="554" r="44" fill="#FFFFFF" stroke="#1B5E8C" stroke-width="2.6"/>
+<g transform="translate(118,554)">
+<rect x="-25" y="-25" width="50" height="22" rx="3" fill="#FFFFFF" stroke="#1B5E8C" stroke-width="2.6"/>
+<rect x="-25" y="-11" width="50" height="22" rx="3" fill="#FFFFFF" stroke="#1B5E8C" stroke-width="2.6"/>
+<path d="M -25 -11 L 0 5 L 25 -11" fill="none" stroke="#1B5E8C" stroke-width="2.4"/></g>
+<circle cx="82" cy="520" r="17" fill="#123B5E"/>
+<text x="82" y="526" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="19" fill="#FFFFFF" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">3</text>
+<text x="210" y="538" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="23" fill="#123B5E" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="0">Pub/Sub accepts and persists</text>
+<text x="210" y="568" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17.5" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">Durable and replicated the moment the publish future resolves.</text>
+<text x="210" y="592" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17.5" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">Seven-day retention makes replay possible at all.</text>
+<rect x="880" y="510" width="560" height="112" rx="9" ry="9" fill="#E7F2EC" stroke="#1F6B4D" stroke-width="2"/>
+<text x="900" y="538" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="15.5" fill="#1F6B4D" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="1.2">NO LOSS BY DESIGN</text>
+<text x="900" y="568" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16" fill="#1F2A33" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">Nothing is lost here. This is the one hop you can genuinely stop</text>
+<text x="900" y="590" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16" fill="#1F2A33" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">worrying about.</text>
+<line x1="118" y1="782" x2="118" y2="872" stroke="#C6D2DC" stroke-width="3"/>
+<rect x="70" y="674" width="1390" height="148" rx="12" ry="12" fill="#FFFFFF" stroke="#C6D2DC" stroke-width="1.6"/>
+<circle cx="118" cy="736" r="44" fill="#FFFFFF" stroke="#1B5E8C" stroke-width="2.6"/>
+<g transform="translate(118,736)">
+<path d="M -25 -17 L 25 -17 L 7 6 L 7 20 L -7 26 L -7 6 Z" fill="#DCE8F2" stroke="#1B5E8C" stroke-width="2.8" stroke-linejoin="round"/></g>
+<circle cx="82" cy="702" r="17" fill="#123B5E"/>
+<text x="82" y="708" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="19" fill="#FFFFFF" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">4</text>
+<text x="210" y="720" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="23" fill="#123B5E" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="0">Subscription delivers to Dataflow</text>
+<text x="210" y="750" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17.5" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">At-least-once. Redelivery after the 60-second ack deadline is normal</text>
+<text x="210" y="774" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17.5" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">behaviour, not an error condition.</text>
+<rect x="880" y="692" width="560" height="112" rx="9" ry="9" fill="#E7F2EC" stroke="#1F6B4D" stroke-width="2"/>
+<text x="900" y="720" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="15.5" fill="#1F6B4D" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="1.2">NO LOSS BY DESIGN</text>
+<text x="900" y="750" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16" fill="#1F2A33" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">After 5 failed attempts a message moves to the dead-letter topic,</text>
+<text x="900" y="772" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16" fill="#1F2A33" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">where a hold subscription retains it for inspection.</text>
+<line x1="118" y1="964" x2="118" y2="1054" stroke="#C6D2DC" stroke-width="3"/>
+<rect x="70" y="856" width="1390" height="148" rx="12" ry="12" fill="#F2F7FB" stroke="#C6D2DC" stroke-width="1.6"/>
+<circle cx="118" cy="918" r="44" fill="#FFFFFF" stroke="#1B5E8C" stroke-width="2.6"/>
+<g transform="translate(118,918)">
+<path d="M -24 -14 L -24 14 A 24 9 0 0 0 24 14 L 24 -14 Z" fill="#FFFFFF" stroke="#6B7885" stroke-width="2.8"/>
+<ellipse cx="0" cy="-14" rx="24" ry="9" fill="#FFFFFF" stroke="#6B7885" stroke-width="2.8"/></g>
+<circle cx="82" cy="884" r="17" fill="#123B5E"/>
+<text x="82" y="890" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="19" fill="#FFFFFF" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">5</text>
+<text x="210" y="902" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="23" fill="#123B5E" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="0">Pipeline decodes and writes raw</text>
+<text x="210" y="932" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17.5" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">Written unconditionally, before any parsing is attempted, with a</text>
+<text x="210" y="956" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17.5" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">SHA-256 of the original bytes.</text>
+<rect x="880" y="874" width="560" height="112" rx="9" ry="9" fill="#E7F2EC" stroke="#1F6B4D" stroke-width="2"/>
+<text x="900" y="902" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="15.5" fill="#1F6B4D" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="1.2">NO LOSS BY DESIGN</text>
+<text x="900" y="932" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16" fill="#1F2A33" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">Even undecodable bytes are preserved. If raw only accepted</text>
+<text x="900" y="954" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16" fill="#1F2A33" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">parseable messages it would not be raw.</text>
+<line x1="118" y1="1146" x2="118" y2="1236" stroke="#C6D2DC" stroke-width="3"/>
+<rect x="70" y="1038" width="1390" height="148" rx="12" ry="12" fill="#FFFFFF" stroke="#C6D2DC" stroke-width="1.6"/>
+<circle cx="118" cy="1100" r="44" fill="#FFFFFF" stroke="#1B5E8C" stroke-width="2.6"/>
+<g transform="translate(118,1100)">
+<path d="M 0 -22 L 22 -13 L 22 5 Q 22 20 0 26 Q -22 20 -22 5 L -22 -13 Z" fill="#DCE8F2" stroke="#1B5E8C" stroke-width="2.8" stroke-linejoin="round"/>
+<path d="M -9 1 L -2 9 L 11 -7" fill="none" stroke="#1B5E8C" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></g>
+<circle cx="82" cy="1066" r="17" fill="#123B5E"/>
+<text x="82" y="1072" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="19" fill="#FFFFFF" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">6</text>
+<text x="210" y="1084" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="23" fill="#123B5E" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="0">Validation classifies the record</text>
+<text x="210" y="1114" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17.5" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">Schema, types, plausibility bounds, timestamp sanity. Implausible is</text>
+<text x="210" y="1138" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17.5" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">not the same as abnormal — see the design notes.</text>
+<rect x="880" y="1056" width="560" height="112" rx="9" ry="9" fill="#E7F2EC" stroke="#1F6B4D" stroke-width="2"/>
+<text x="900" y="1084" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="15.5" fill="#1F6B4D" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="1.2">NO LOSS BY DESIGN</text>
+<text x="900" y="1114" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16" fill="#1F2A33" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">Every rejection becomes a quarantine row with a reason code</text>
+<text x="900" y="1136" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16" fill="#1F2A33" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">and offending field. No path exits the DoFn without emitting.</text>
+<line x1="118" y1="1328" x2="118" y2="1418" stroke="#C6D2DC" stroke-width="3"/>
+<rect x="70" y="1220" width="1390" height="148" rx="12" ry="12" fill="#F2F7FB" stroke="#C6D2DC" stroke-width="1.6"/>
+<circle cx="118" cy="1282" r="44" fill="#FFFFFF" stroke="#1B5E8C" stroke-width="2.6"/>
+<g transform="translate(118,1282)">
+<rect x="-22" y="-22" width="30" height="30" rx="4" fill="#FFFFFF" stroke="#1B5E8C" stroke-width="2.6" stroke-dasharray="5 4"/>
+<rect x="-6" y="-6" width="30" height="30" rx="4" fill="#DCE8F2" stroke="#1B5E8C" stroke-width="2.8"/></g>
+<circle cx="82" cy="1248" r="17" fill="#123B5E"/>
+<text x="82" y="1254" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="19" fill="#FFFFFF" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">7</text>
+<text x="210" y="1266" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="23" fill="#123B5E" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="0">Deduplication suppresses repeats</text>
+<text x="210" y="1296" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17.5" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">Keyed on the producer-supplied event_id, never on derived ingestion</text>
+<text x="210" y="1320" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17.5" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">metadata. 60-minute processing-time state window.</text>
+<rect x="880" y="1238" width="560" height="112" rx="9" ry="9" fill="#DCE8F2" stroke="#1B5E8C" stroke-width="2"/>
+<text x="900" y="1266" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="15.5" fill="#1B5E8C" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="1.2">DELIBERATE LOSS</text>
+<text x="900" y="1296" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16" fill="#1F2A33" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">Repeat copies are dropped from curated on purpose — and are still</text>
+<text x="900" y="1318" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16" fill="#1F2A33" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">recorded in raw — a repeat delivery is a fact about the world.</text>
+<line x1="118" y1="1510" x2="118" y2="1600" stroke="#C6D2DC" stroke-width="3"/>
+<rect x="70" y="1402" width="1390" height="148" rx="12" ry="12" fill="#FFFFFF" stroke="#C6D2DC" stroke-width="1.6"/>
+<circle cx="118" cy="1464" r="44" fill="#FFFFFF" stroke="#1B5E8C" stroke-width="2.6"/>
+<g transform="translate(118,1464)">
+<circle cx="0" cy="0" r="22" fill="#FFFFFF" stroke="#1B5E8C" stroke-width="2.9"/>
+<path d="M 0 -13 L 0 1 L 11 8" fill="none" stroke="#1B5E8C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g>
+<circle cx="82" cy="1430" r="17" fill="#123B5E"/>
+<text x="82" y="1436" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="19" fill="#FFFFFF" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">8</text>
+<text x="210" y="1448" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="23" fill="#123B5E" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="0">Event-time windowing</text>
+<text x="210" y="1478" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17.5" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">Fixed 60-second windows on event time, 45 minutes allowed lateness</text>
+<text x="210" y="1502" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17.5" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">to cover the ground-station-3 delivery constraint.</text>
+<rect x="880" y="1420" width="560" height="112" rx="9" ry="9" fill="#E7F2EC" stroke="#1F6B4D" stroke-width="2"/>
+<text x="900" y="1448" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="15.5" fill="#1F6B4D" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="1.2">NO LOSS BY DESIGN</text>
+<text x="900" y="1478" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16" fill="#1F2A33" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">Rows are written per element regardless of window. Windows bound</text>
+<text x="900" y="1500" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16" fill="#1F2A33" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">aggregate membership only; late rows land flagged, not discarded.</text>
+<rect x="70" y="1584" width="1390" height="148" rx="12" ry="12" fill="#F2F7FB" stroke="#C6D2DC" stroke-width="1.6"/>
+<circle cx="118" cy="1646" r="44" fill="#FFFFFF" stroke="#1B5E8C" stroke-width="2.6"/>
+<g transform="translate(118,1646)">
+<rect x="-24" y="-19" width="48" height="38" rx="4" fill="#FFFFFF" stroke="#1B5E8C" stroke-width="2.8"/>
+<rect x="-24" y="-19" width="48" height="12" rx="4" fill="#1B5E8C"/>
+<line x1="-24" y1="3" x2="24" y2="3" stroke="#1B5E8C" stroke-width="2"/>
+<line x1="0" y1="-7" x2="0" y2="19" stroke="#1B5E8C" stroke-width="2"/></g>
+<circle cx="82" cy="1612" r="17" fill="#123B5E"/>
+<text x="82" y="1618" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="19" fill="#FFFFFF" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">9</text>
+<text x="210" y="1630" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="23" fill="#123B5E" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="0">BigQuery insert makes it queryable</text>
+<text x="210" y="1660" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17.5" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">Streaming inserts with retry on transient error. The row is now</text>
+<text x="210" y="1684" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17.5" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">visible to mission operations.</text>
+<rect x="880" y="1602" width="560" height="112" rx="9" ry="9" fill="#FBEDED" stroke="#A32F2F" stroke-width="2"/>
+<text x="900" y="1630" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="15.5" fill="#A32F2F" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="1.2">LOSS POSSIBLE — KNOWN GAP</text>
+<text x="900" y="1660" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16" fill="#1F2A33" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">A persistently failing insert. Closing this means capturing the</text>
+<text x="900" y="1682" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="16" fill="#1F2A33" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">sink’s FAILED_ROWS output into the quarantine table.</text>
+<line x1="40" y1="1770" x2="1460" y2="1770" stroke="#C6D2DC" stroke-width="2"/>
+<text x="40" y="1804" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="19" fill="#123B5E" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="0">Reconciliation:</text>
+<text x="196" y="1804" font-family="'DejaVu Sans Mono', Consolas, monospace" font-size="19" fill="#1F2A33" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">raw  =  curated  +  quarantined  +  duplicates suppressed.</text>
+<text x="40" y="1830" font-family="Carlito, Calibri, 'DejaVu Sans', sans-serif" font-size="17" fill="#6B7885" text-anchor="start" font-weight="normal" font-style="normal" letter-spacing="0">If those numbers do not add up, one of the nine hops above is losing data — and the query that proves it is in the deployment guide.</text>
+</svg>

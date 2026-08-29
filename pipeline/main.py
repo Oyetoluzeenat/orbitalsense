@@ -4,7 +4,8 @@ import logging
 import apache_beam as beam
 from apache_beam.io.gcp.bigquery import BigQueryDisposition, WriteToBigQuery
 from apache_beam.metrics import Metrics
-from apache_beam.options.pipeline_options import PipelineOptions, StandardOptions
+from apache_beam.options.pipeline_options import (
+    GoogleCloudOptions, PipelineOptions, StandardOptions)
 from apache_beam.transforms.deduplicate import DeduplicatePerKey
 from apache_beam.transforms.trigger import (
     AccumulationMode, AfterProcessingTime, AfterWatermark)
@@ -44,6 +45,7 @@ def run(argv=None):
 
     opts = PipelineOptions(beam_args, save_main_session=True)
     opts.view_as(StandardOptions).streaming = True
+    opts.view_as(GoogleCloudOptions).project = known.project
 
     def table(name):
         return f"{known.project}:{known.dataset}.{name}"
