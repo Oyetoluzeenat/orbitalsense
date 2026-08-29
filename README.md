@@ -32,3 +32,15 @@ After (pipeline_version 1.1.0-dedup):
 
 Raw retains all copies in both cases, deliberately: a repeat delivery is a fact
 about the world, and raw's job is to record what arrived.
+
+## Architecture
+
+![Architecture](docs/architecture.png)
+
+Failure paths are red, the unconditional write to raw is grey, replay is green.
+
+## How a message travels
+
+![Message journey](docs/message-journey.png)
+
+`raw = curated + quarantined + duplicates suppressed`.
