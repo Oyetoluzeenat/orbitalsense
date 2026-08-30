@@ -223,3 +223,48 @@ Everything else on the scaling list costs days. This costs an hour.
 - **No Cloud Monitoring dashboards.** A stalled producer and a stalled pipeline
   look identical from BigQuery. An alert on the subscription's oldest
   unacked-message age is what distinguishes them.
+
+## Fault drills — measured against the deployed system
+
+Each fault was published directly to the Pub/Sub topic, bypassing the producer,
+so the pipeline's classification is demonstrated independently of the simulator.
+
+**Drill 1 — valid JSON, physically impossible value.**
+
+    event_id: drill-1, battery_voltage_v: 9999.0
+    → OUT_OF_BOUNDS
+      offending_field: battery_voltage_v
+      offending_value: 9999.0
+      reason_detail:   "battery_voltage_v=9999.0 outside plausible range [18.0, 36.0]"
+
+The value parses as a number. It is not a satellite in trouble; it is a corrupt
+reading, and admitting it would poison every average in the platform.
+
+**Drill 2 — silently renamed field.**
+
+    event_id: drill-2, subsystem: comms, metrics: {"signalStrength": -95.0}
+    → SCHEMA_DRIFT
+      offending_field: signalStrength
+      offending_value: -95.0
+      reason_detail:   "unrecognised metric field(s): ['signalStrength']"
+
+This is the failure the fourth analytics question is built around. The message
+is valid JSON and parses cleanly; the pipeline simply does not recognise the
+field. Because it never reaches curated, it can never raise an alert — so comms
+appears to have the fewest alerts and reads as the healthiest subsystem. It is
+not. Query 4 exposes this by joining alert counts against quarantine, and the
+rejection rate plus the offending field name give the diagnosis directly.
+
+A pipeline that dropped malformed data silently would have shown comms green
+indefinitely.
+
+**Drill 3 — duplicate burst.**
+
+    20 identical publishes of one event_id
+    → 20 rows in raw_telemetry, 1 row in curated_telemetry
+
+Raw records every delivery because a repeat delivery is a fact about the world.
+Curated records the event once.
+
+Each drill was located by a single targeted query on `event_id`, in under a
+minute. See `sql/proofs/drill_lookup.sql`.

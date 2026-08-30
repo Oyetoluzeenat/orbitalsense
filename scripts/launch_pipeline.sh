@@ -86,7 +86,7 @@ fi
 echo "==> DataflowRunner in ${REGION}"
 echo "    Cancel this job when you stop working. It bills until you do."
 
-exec python "${COMMON[@]}" \
+exec "${PYTHON:-python3}" "${COMMON[@]}" \
   --runner=DataflowRunner \
   --region="${REGION}" \
   --service_account_email="${SA}" \
