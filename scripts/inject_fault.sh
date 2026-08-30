@@ -73,8 +73,10 @@ case "${1:-help}" in
       SELECT
         (SELECT COUNT(*) FROM \`${PROJECT_ID}.${DATASET}.raw_telemetry\`
           WHERE ingest_time > TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 1 HOUR)) AS raw,
-        (SELECT COUNT(*) FROM \`${PROJECT_ID}.${DATASET}.curated_telemetry\`) AS curated,
-        (SELECT COUNT(*) FROM \`${PROJECT_ID}.${DATASET}.quarantine_telemetry\`) AS quarantined"
+        (SELECT COUNT(*) FROM \`${PROJECT_ID}.${DATASET}.curated_telemetry\`
+          WHERE ingest_time > TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 1 HOUR)) AS curated,
+        (SELECT COUNT(*) FROM \`${PROJECT_ID}.${DATASET}.quarantine_telemetry\`
+          WHERE ingest_time > TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 1 HOUR)) AS quarantined"
     ;;
 
   quarantine)

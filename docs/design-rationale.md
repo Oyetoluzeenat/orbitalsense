@@ -268,3 +268,19 @@ Curated records the event once.
 
 Each drill was located by a single targeted query on `event_id`, in under a
 minute. See `sql/proofs/drill_lookup.sql`.
+
+## Reconciliation — every message accounted for
+
+One hour on the deployed Dataflow pipeline:
+
+    raw         7,688
+    curated     7,274
+    quarantined   158
+    difference    256  (duplicates suppressed, 3.3% — matches the injected rate)
+
+raw = curated + quarantined + duplicates suppressed.
+
+An earlier version of this check reported curated exceeding raw, which is
+impossible. The cause was in the query, not the pipeline: raw was filtered to
+the last hour while curated and quarantine counted all history. Windows must
+match for the identity to hold.
