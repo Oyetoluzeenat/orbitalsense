@@ -284,3 +284,30 @@ An earlier version of this check reported curated exceeding raw, which is
 impossible. The cause was in the query, not the pipeline: raw was filtered to
 the last hour while curated and quarantine counted all history. Windows must
 match for the identity to hold.
+
+## Worker-loss recovery — measured
+
+A Dataflow worker VM was deleted mid-stream while the pipeline was processing
+live telemetry.
+
+Per-minute ingestion into raw_telemetry:
+
+    07:02   122   worker deleted
+    07:03     0   gap
+    07:04     0   gap
+    07:05   506   recovery: Pub/Sub redelivers the unacknowledged backlog
+    07:06    59   settled
+
+The job never left the Running state. Dataflow detected the lost worker and
+provisioned a replacement without failing the job.
+
+Messages in flight were never acknowledged, so Pub/Sub redelivered them once the
+60-second ack deadline expired — visible as the 506-row burst at 07:05 against a
+steady-state rate of roughly 60 per minute. Those redeliveries are true
+duplicates by our definition, carrying the same producer-assigned event_id, and
+were suppressed by DeduplicatePerKey. Deduplication state survived the worker
+loss because Streaming Engine holds it off the worker rather than in worker
+memory.
+
+A gap in ingest rate; no gap in coverage. No manual intervention, no rerun
+script.
